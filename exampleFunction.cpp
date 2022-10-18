@@ -4,7 +4,13 @@
 #include <stdint.h> 
 
 unsigned int wrapFunctionAdd(unsigned int ui_a, unsigned int ui_b) {
-  unsigned int usum = ui_a + ui_b;
+  unsigned int usum = 0;
+  if(UINT_MAX - ui_a < ui_b){
+    //Error
+  }else{
+    usum = ui_a + ui_b;
+  }
+  
   return usum;
 }
 
