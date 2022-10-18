@@ -19,6 +19,7 @@ unsigned int wrapFunctionMul(unsigned int ui_a, unsigned int ui_b) {
 
   if(UINT_MAX / ui_a < ui_b){
     //Error
+    umul = 1;
   }else {
     umul = ui_a*ui_b;
   }
